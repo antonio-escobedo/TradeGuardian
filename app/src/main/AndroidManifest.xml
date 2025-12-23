@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tradeguardian">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".TradeGuardianApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="TradeGuardian"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true">
+
+        <!-- Accessibility Service -->
+        <service
+            android:name=".services.MTDetectionService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!-- Foreground Service -->
+        <service
+            android:name=".services.OverlayService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="specialUse" />
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Killzone Info Activity -->
+        <activity
+            android:name=".ui.KillzoneInfoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Transparent" />
+
+        <!-- Analysis Check Activity -->
+        <activity
+            android:name=".ui.AnalysisCheckActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Transparent" />
+
+        <!-- Discipline Reminder Activity -->
+        <activity
+            android:name=".ui.DisciplineReminderActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Transparent" />
+
+    </application>
+</manifest>

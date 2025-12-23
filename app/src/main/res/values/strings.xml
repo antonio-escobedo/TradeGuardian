@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">TradeGuardian</string>
+
+    <!-- Main Activity -->
+    <string name="service_active">Servicio Activo</string>
+    <string name="service_inactive">Servicio Inactivo</string>
+    <string name="start_monitoring">Iniciar Monitoreo</string>
+    <string name="stop_monitoring">Detener Monitoreo</string>
+    <string name="open_accessibility">Configurar Accesibilidad</string>
+    <string name="accessibility_instructions">Activa TradeGuardian en Configuración > Accesibilidad > Servicios instalados</string>
+
+    <!-- Accessibility Service -->
+    <string name="accessibility_description">TradeGuardian detecta cuando abres MetaTrader para ayudarte a mantener la disciplina en tu trading</string>
+
+    <!-- Killzone Messages -->
+    <string name="killzone_ny_title">NY Killzone Activa</string>
+    <string name="killzone_ldn_title">LDN Killzone Activa</string>
+    <string name="killzone_asia_title">ASIA Killzone Activa</string>
+    <string name="outside_killzone">Fuera de Killzone</string>
+
+    <!-- Button Texts -->
+    <string name="yes">SÍ</string>
+    <string name="no">NO</string>
+    <string name="accept">ACEPTAR</string>
+    <string name="continue_text">CONTINUAR</string>
+    <string name="cancel">CANCELAR</string>
+
+    <!-- Motivational Phrases -->
+    <string name="motivational_1">¡La disciplina es tu mejor indicador!</string>
+    <string name="motivational_2">Mantén tu edge y sigue tu plan.</string>
+    <string name="motivational_3">Confía en tu análisis, opera con convicción.</string>
+    <string name="motivational_4">La consistencia construye fortunas.</string>
+    <string name="motivational_5">Cada operación cuenta. ¡Enfócate!</string>
+
+    <!-- Questions -->
+    <string name="question_analysis">¿Ya realizaste tu análisis en TradingView?</string>
+    <string name="question_minmax">¿Ya marcaste mínimos y máximos clave?</string>
+    <string name="question_support">¿Identificaste zonas de soporte/resistencia?</string>
+    <string name="question_risk">¿Tienes definidos tu stop loss y take profit?</string>
+
+    <!-- Warning Messages -->
+    <string name="warning_outside_killzone">No estás dentro de la killzone de NY, LDN o ASIA. Volatilidad reducida, spreads más altos.\n\n¿Deseas continuar?</string>
+    <string name="discipline_message">Que tengas suerte con tus apuestas, recuerda que para tener éxito hay que ser disciplinado y no apostar a lo pendejo.</string>
+
+    <!-- Success Messages -->
+    <string name="success_preparation">¡Excelente preparación! La disciplina paga.</string>
+    <string name="success_ready">Analizado y listo. Ejecuta con confianza.</string>
+    <string name="success_consistency">Plan + Disciplina = Consistencia. ¡Adelante!</string>
+    <string name="success_emotionless">Has hecho tu tarea. Ahora opera sin emociones.</string>
+
+    <!-- Time Format -->
+    <string name="ny_time_format">%02d:%02d (NY Time)</string>
+</resources>
