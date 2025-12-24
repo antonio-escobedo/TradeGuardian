@@ -1,126 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/color_primary"
-    android:padding="24dp">
+    android:layout_height="match_parent">
 
-    <!-- Header -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="40dp">
-
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/ic_shield"
-            android:layout_marginBottom="16dp"/>
+        android:padding="24dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TRADEGUARDIAN"
-            android:textColor="@color/white"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:letterSpacing="0.1"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tu guardián de disciplina en trading"
-            android:textColor="@color/teal_200"
-            android:textSize="14sp"
-            android:layout_marginTop="8dp"/>
-
-    </LinearLayout>
-
-    <!-- Status Card -->
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="4dp"
-        app:cardBackgroundColor="@color/card_background"
-        android:layout_marginBottom="24dp">
-
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
+            android:text="TradeGuardian"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
 
-            <TextView
-                android:id="@+id/tv_status"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/service_inactive"
-                android:textColor="@color/text_primary"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:drawablePadding="8dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado de permisos:"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
 
-            <TextView
-                android:id="@+id/tv_killzone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Killzone: --"
-                android:textColor="@color/text_secondary"
-                android:textSize="14sp"
-                android:gravity="center"
-                android:layout_marginTop="8dp"/>
+        <!-- ACCESIBILIDAD -->
+        <TextView
+            android:id="@+id/tvAccessibilityStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accesibilidad: ❌"/>
 
-            <TextView
-                android:id="@+id/tv_time"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Hora NY: --:--"
-                android:textColor="@color/text_secondary"
-                android:textSize="14sp"
-                android:gravity="center"/>
+        <Button
+            android:id="@+id/btnAccessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activar Accesibilidad"/>
 
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+        <!-- OVERLAY -->
+        <TextView
+            android:id="@+id/tvOverlayStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Overlay: ❌"
+            android:layout_marginTop="12dp"/>
 
-    <!-- Buttons -->
-    <Button
-        android:id="@+id/btn_start"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:text="@string/start_monitoring"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        style="@style/ButtonSuccess"
-        android:layout_marginBottom="16dp"/>
+        <Button
+            android:id="@+id/btnOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Permitir Overlay"/>
 
-    <Button
-        android:id="@+id/btn_accessibility"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:text="@string/open_accessibility"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        style="@style/ButtonWarning"
-        android:layout_marginBottom="16dp"/>
+        <!-- BATERÍA -->
+        <TextView
+            android:id="@+id/tvBatteryStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batería: ⚠️"
+            android:layout_marginTop="12dp"/>
 
-    <!-- Instructions -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/accessibility_instructions"
-        android:textColor="@color/white"
-        android:textSize="12sp"
-        android:lineSpacingExtra="2dp"
-        android:padding="16dp"
-        android:background="@color/color_accent"
-        android:layout_marginTop="24dp"
-        android:gravity="center"/>
+        <Button
+            android:id="@+id/btnBattery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Optimización de batería"/>
 
-</LinearLayout>
+        <!-- TEST -->
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Probar Overlay"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

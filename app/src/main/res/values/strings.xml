@@ -10,8 +10,8 @@
     <string name="accessibility_instructions">Activa TradeGuardian en Configuración > Accesibilidad > Servicios instalados</string>
 
     <!-- Accessibility Service -->
-    <string name="accessibility_description">TradeGuardian detecta cuando abres MetaTrader para ayudarte a mantener la disciplina en tu trading</string>
-
+    <string name="accessibility_description">
+    TradeGuardian detecta la apertura de plataformas de trading para reforzar disciplina.</string>
     <!-- Killzone Messages -->
     <string name="killzone_ny_title">NY Killzone Activa</string>
     <string name="killzone_ldn_title">LDN Killzone Activa</string>
